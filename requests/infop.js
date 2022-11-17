@@ -5,22 +5,22 @@ module.exports = async function(chto, txdata =''){
         //console.log(chto)  
         switch (chto) {
           case 'infoval':
-            tmp = "haqqd q staking validators -o json --limit=1000 \| jq \'\.validators[] \| select(\.operator_address==\"" + txdata + "\" )' \| jq -r ";
+            tmp = "neutrond q staking validators -o json --limit=1000 \| jq \'\.validators[] \| select(\.operator_address==\"" + txdata + "\" )' \| jq -r ";
             break;
           case 'myip':
-              tmp = "cat /root/.haqqd/config/client\.toml \| grep node";
+              tmp = "cat /root/.neutrond/config/client\.toml \| grep node";
               break;
           case 'aprop':
-            tmp = "haqqd query gov proposals -o json --limit=1000 \| jq \'\.proposals[] \| select(\.status==\"PROPOSAL_STATUS_DEPOSIT_PERIOD\")' \| jq -r";
+            tmp = "neutrond query gov proposals -o json --limit=1000 \| jq \'\.proposals[] \| select(\.status==\"PROPOSAL_STATUS_DEPOSIT_PERIOD\")' \| jq -r";
             break;
           case 'peers':
             tmp = `curl -s http://${txdata}/net_info | grep n_peers`;
             break;
           case 'rest':
-              tmp = "systemctl restart haqqd";
+              tmp = "systemctl restart neutrond";
               break;
           case 'allprop':
-              tmp = "haqqd query gov proposals -o json --limit=1000 \| jq \'\.proposals[] \' \| jq -r \'\.proposal_id + \" \" + \.status\'";
+              tmp = "neutrond query gov proposals -o json --limit=1000 \| jq \'\.proposals[] \' \| jq -r \'\.proposal_id + \" \" + \.status\'";
               break;
           case 'df':
             tmp = "df -h"
@@ -29,7 +29,7 @@ module.exports = async function(chto, txdata =''){
             tmp = "cat /proc/meminfo | grep MemTotal -C 2"
             break;
           case 'vsync':
-            tmp = "haqqd status 2>&1 | jq"
+            tmp = "neutrond status 2>&1 | jq"
             break;
 
           default:
