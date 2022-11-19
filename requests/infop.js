@@ -44,7 +44,8 @@ module.exports = async function(chto, txdata =''){
                 }
                 if (stderr) {
                     console.error(`stderr: ${stderr}`);
-                    return;
+		    resolve(false)
+		    return false;
                 }
                 resolve(stdout);
               });
