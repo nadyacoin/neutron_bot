@@ -97,10 +97,12 @@ pm2 stop index
 Функция `peer` проверяет количество пиров, если пиров менее 2-х, то перезагружает ноду в надежде поймать пир
 Потом берется последний пропозал и сравниватся с `LASTPROPOSAL`. Если последний пропозал больше, чем в `LASTPROPOSAL`, то отправляется сообщение пользователю и `LASTPROPOSAL` перезаписывается.
 ## О ручных командах:
-### /start - Приветствие
-![r1](https://user-images.githubusercontent.com/56988566/195889424-8ed1cd75-29fe-478c-b605-8782ff685339.png)
-### /info - Информация о валидаторе
-![r2](https://user-images.githubusercontent.com/56988566/195889673-c1ce7375-ac7f-4663-9574-58eb54a1ea81.png)
+### /start - Бот имеет меню для удобной навигации
+![menu](https://user-images.githubusercontent.com/103100190/202829836-c16dfcd1-5370-431f-b841-7dfdbab31e84.png)
+
+### /info - Информация о ноде
+![info](https://user-images.githubusercontent.com/103100190/202829884-7aae8038-04d1-49ac-a68d-75f590cc9a8d.png)
+
 ### /aprop - Список активных proposal
 ![r3](https://user-images.githubusercontent.com/56988566/195890052-affac785-41a1-4923-bc12-c019accad3ed.png)
 ### /allprop - Список всех proposals
