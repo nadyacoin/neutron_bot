@@ -83,7 +83,8 @@ pm2 stop index
 ```
 
 ## Подробнее о коде:
-![code1](https://user-images.githubusercontent.com/56988566/195885061-f047239e-be13-4637-addd-223c462700b6.png) <br>
+![loop](https://user-images.githubusercontent.com/103100190/202829617-28f2dcc0-ab79-4e70-aa40-4d9974df9171.png)
+ <br>
 Функция loop() каждые infotime секунда запускает функцию prov() <br>
 Функция `let valiki = await infop('infoval',valoper)` возвращает состояние валидатора: <br>
 ![code2](https://user-images.githubusercontent.com/56988566/195886216-6ae6ee2b-c077-4a14-9d23-63993f0ea7e2.png) <br>
