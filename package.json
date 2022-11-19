@@ -1,0 +1,23 @@
+{
+  "name": "tgbotnode",
+  "version": "1.0.0",
+  "description": "HAQQ Node Validator",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "prod": "node index.js"
+  },
+  "keywords": [
+    "HAQQ",
+    "Validator",
+    "BOT"
+  ],
+  "author": "tarabukinivan",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "dotenv": "^16.0.3",
+    "node-telegram-bot-api": "^0.59.0",
+    "nodemon": "^2.0.20"
+  }
+}
