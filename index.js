@@ -19,12 +19,16 @@ bot.setMyCommands([
   {command: '/vsync', description: 'Information about node synchronization'},
   {command: '/settime', description: 'Frequency of sending messages for critical node errors'},
 ])
-
+let valjson=false
+let vsyncjson=false
 async function prov(){
+let valjson=false
+let vsyncjson=false
   let valiki = await infop('infoval',valoper)
-  let valjson = JSON.parse(valiki)
+  if(valiki){
+  valjson = JSON.parse(valiki)
   let vsync = await infop('vsync')
-    let vsyncjson = JSON.parse(vsync)
+    vsyncjson = JSON.parse(vsync)
   let allprop = await infop('allprop')
   //console.log(allprop)
   let allproparray = allprop.split('\n')
@@ -59,6 +63,10 @@ async function prov(){
     bot.sendMessage(chatId, `Выполнен рестарт, пиров было не больше 2`);
     await sleep(4000)
   }
+  }else{
+
+bot.sendMessage(chatId, `Validator not working`);
+}
 }
 
 (function loop() {
@@ -73,11 +81,10 @@ const start = () => {
     const text = msg.text;
     
     let myip = await infop('myip')
-    console.log(myip)
 
     if(text === '/start'){
-      await bot.sendSticker(chatId, 'https://tlgrm.ru/_/stickers/ed8/09d/ed809db6-5ac1-4736-9f42-b29352cc7591/2.webp')
-      return bot.sendMessage(chatId, 'Welcome to Islamic token bot!')
+//      await bot.sendSticker(chatId, 'https://static.tildacdn.com/tild6135-3863-4935-a132-333137343234/neutron_img.svg')
+      return bot.sendMessage(chatId, 'Welcome to Neutron node bot!')
     }
     
     if(text === '/info'){
@@ -97,7 +104,7 @@ const start = () => {
     }
 
     if(text === '/allprop'){
-      allprop = await infop('allprop')
+let      allprop = await infop('allprop')
       if(!allprop){
         allprop = 'Proposals not found'
       }
@@ -108,9 +115,9 @@ const start = () => {
       let myip = await infop('myip')
       let stpos = myip.indexOf("tcp://")
       myip = myip.slice(stpos+6,myip.length-2)
-      peers = await infop('peers',myip)
+      let peers = await infop('peers',myip)
       peers = peers.split('"');
-      peers_kol = parseInt(peers[3])
+      let peers_kol = parseInt(peers[3])
       
       return bot.sendMessage(chatId, `пиров ${peers_kol}`);
     }
