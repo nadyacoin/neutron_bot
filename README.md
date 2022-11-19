@@ -104,11 +104,11 @@ pm2 stop index
 ### /allprop - Список всех proposals
 ![allprop](https://user-images.githubusercontent.com/103100190/202832120-4cba2713-0c00-4086-bc4e-5b983a3b6457.png)
 ### /df - Информация о жестком диске
-![r5](https://user-images.githubusercontent.com/56988566/195890492-58c9f148-cb7e-4099-b014-c8b42679efdb.png)
+![df](https://user-images.githubusercontent.com/103100190/202832289-1d14385b-1cf6-4848-a39d-bd7ff33d4d4e.png)
 ### /free - Информация об ОЗУ
-![r6](https://user-images.githubusercontent.com/56988566/195890750-545afafd-f0d9-46d1-b914-271bfe5980ba.png)
+![free](https://user-images.githubusercontent.com/103100190/202832329-f1537249-4ac1-4f4b-baff-c226f6211932.png)
 ### /vsync - Информация о синхронизации
 ![vsync](https://user-images.githubusercontent.com/103100190/202832149-d4ec516e-cbf3-43af-b890-8a9ab5f44738.png)
 ### /settime - Частота отправки сообщений при критических ошибках ноды
-![r8](https://user-images.githubusercontent.com/56988566/195891234-2e22a9f7-8e35-46fe-b4e6-91e4ad5dfb6f.png)
+![settime](https://user-images.githubusercontent.com/103100190/202832359-e3a75db0-6f40-4844-86f7-2eab492459bf.png)
 
