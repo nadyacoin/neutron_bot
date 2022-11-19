@@ -104,15 +104,16 @@ pm2 stop index
 ![info](https://user-images.githubusercontent.com/103100190/202829884-7aae8038-04d1-49ac-a68d-75f590cc9a8d.png)
 
 ### /aprop - Список активных proposal
-![r3](https://user-images.githubusercontent.com/56988566/195890052-affac785-41a1-4923-bc12-c019accad3ed.png)
+![aprop](https://user-images.githubusercontent.com/103100190/202832092-63bdc51b-d250-49b5-88a4-5d77ffb3409f.png)
+
 ### /allprop - Список всех proposals
-![r4](https://user-images.githubusercontent.com/56988566/195890241-95892ae6-3a3b-49e7-98dc-bbe741d47e52.png)
+![allprop](https://user-images.githubusercontent.com/103100190/202832120-4cba2713-0c00-4086-bc4e-5b983a3b6457.png)
 ### /df - Информация о жестком диске
 ![r5](https://user-images.githubusercontent.com/56988566/195890492-58c9f148-cb7e-4099-b014-c8b42679efdb.png)
 ### /free - Информация об ОЗУ
 ![r6](https://user-images.githubusercontent.com/56988566/195890750-545afafd-f0d9-46d1-b914-271bfe5980ba.png)
 ### /vsync - Информация о синхронизации
-![r7](https://user-images.githubusercontent.com/56988566/195890968-c06ce3ee-4f05-41a3-9cb6-030acc0a537c.png)
+![vsync](https://user-images.githubusercontent.com/103100190/202832149-d4ec516e-cbf3-43af-b890-8a9ab5f44738.png)
 ### /settime - Частота отправки сообщений при критических ошибках ноды
 ![r8](https://user-images.githubusercontent.com/56988566/195891234-2e22a9f7-8e35-46fe-b4e6-91e4ad5dfb6f.png)
 
