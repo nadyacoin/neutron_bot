@@ -86,14 +86,9 @@ pm2 stop index
 ![loop](https://user-images.githubusercontent.com/103100190/202829617-28f2dcc0-ab79-4e70-aa40-4d9974df9171.png)
  <br>
 Функция loop() каждые infotime секунда запускает функцию prov() <br>
-Функция `let valiki = await infop('infoval',valoper)` возвращает состояние валидатора: <br>
-![code2](https://user-images.githubusercontent.com/56988566/195886216-6ae6ee2b-c077-4a14-9d23-63993f0ea7e2.png) <br>
-если `jailed` станет `true`, то отправит сообщение `valoper jailed` <br>
-Функция `let vsync = await infop('vsync')` возвращает состояние синхронизации ноды: <br>
-![code3](https://user-images.githubusercontent.com/56988566/195887012-69145bd2-e71b-463e-86b6-56bc92dad1ef.png) <br>
-Если `catching_up` станет `true`, то отправит сообщение `the node is not synchronized, check the synchronization information with the /vsync command` <br>
-Функция `let allprop = await infop('allprop')` возвращает список всех пропозалов:  <br>
-![code4](https://user-images.githubusercontent.com/56988566/195887982-113516e4-e1db-42e1-afd7-94f14672b222.png)  <br>
+Функция `let valiki = await infop('infoval',valoper)` возвращает состояние валидатора. Если `jailed` станет `true`, то отправит сообщение `valoper jailed` <br>
+Функция `let vsync = await infop('vsync')` возвращает состояние синхронизации ноды. Если `catching_up` станет `true`, то отправит сообщение `the node is not synchronized, check the synchronization information with the /vsync command` <br>
+Функция `let allprop = await infop('allprop')` возвращает список всех пропозалов. <br>
 Функция `peer` проверяет количество пиров, если пиров менее 2-х, то перезагружает ноду в надежде поймать пир
 Потом берется последний пропозал и сравниватся с `LASTPROPOSAL`. Если последний пропозал больше, чем в `LASTPROPOSAL`, то отправляется сообщение пользователю и `LASTPROPOSAL` перезаписывается.
 ## О ручных командах:
